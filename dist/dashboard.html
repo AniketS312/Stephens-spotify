@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Spotify Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <div class="dashboard">
+        <nav class="main-nav">
+                <img height="45" width="150" src="./spotify-logo.png" alt="Spotify contribution logo">
+                <div class="main-nav__search-bar">
+                    <label for="genres">Select Genre</label>
+                    <select name="genres" id="genres" class="select-genre">
+                        <option disabled selected hidden>Select Genre</option>
+                    </select>
+                </div>
+        </nav>
+        <main>
+            <div class="success">
+                <h1>Success</h1>
+                <p>Start Searching for new releases today!</p>
+                <div class="buttons">
+                    <a class="button" id="get-releases">Get New Releases</a>
+                </div>
+            </div>
+            <div class="new-releases">
+            </div>
+            <div class="load-more">
+                <a class="button" id="load-more-button">Load More</a>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="./fetch.js"></script>
+<script src="./templates/CardTemplate.js"></script>
+<script src="./templates/ModalTemplate.js"></script>
+<script src="./templates/menuItems.js"></script>
+<script src="./dashboard.js"></script>
+</html>

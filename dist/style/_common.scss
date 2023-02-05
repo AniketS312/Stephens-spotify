@@ -1,0 +1,81 @@
+@use 'variables';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-size: 10px;
+}
+
+body {
+    background-color: variables.$spotify-black;
+    color: white;
+}
+
+
+// ------ Text Formating
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+// ------ End of Tet Formating
+
+
+
+// ------ Components 
+.button {
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background-color: variables.$spotify-green;
+    font-size: 1rem;
+    padding: .8rem 2.5rem;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    color: variables.$spotify-black;
+}
+
+.image-button {
+    width: 250px;
+    height: 250px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+}
+
+a:focus {
+    border: none;
+}
+
+a:active {
+    border: none;
+}
+
+// ------ End of components
+// Trigger classes
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+// --- End of Trigger classes

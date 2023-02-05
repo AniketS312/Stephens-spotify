@@ -1,0 +1,18 @@
+@use 'variables';
+
+.error {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    & > * {
+        margin-bottom: 2rem;
+    }
+
+    & p a {
+        font-size: inherit;
+        color: white
+    }
+}

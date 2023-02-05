@@ -1,0 +1,129 @@
+@use 'variables';
+
+// ------ NAVIGATION 
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 0 5%;
+    &__genres {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        gap: 15px;
+    }
+    &__search-bar {
+        & label {
+         display: none;   
+        font-size: 1.5rem;
+        }
+    }
+}
+// ------ END OF NAVIGATION
+
+// ------- DASHBOARD MAIN CONTAINER
+.dashboard {
+    width: 100%;
+    height: auto;
+    padding: 0 5%;
+    position: relative;
+
+    & nav {
+        width: 100%;
+        height: 10vh;
+    }
+
+
+
+}
+// ------- END OF DASHBOARD
+
+// SUCCESS SECTION
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    text-align: center;
+
+    & .buttons {
+        margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+    }
+}
+// ------ End of SUCCESS PAGE
+
+// New Releases Section
+.new-releases {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 4rem;
+
+    &__album-card {
+        padding: 5px 5px 10px 5px;
+        -webkit-box-shadow: 0px 0px 4px 1px rgba(255,255,255,0.37); 
+        box-shadow: 0px 0px 4px 1px rgba(255,255,255,0.37);
+        background-color: aliceblue;
+        color: variables.$spotify-black;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow: hidden;
+
+        &--description {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+.album-info,
+.album-meta {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.album-info {
+    flex-direction: column;
+    padding-top: 1.5rem;
+    h2 {
+        font-size: 2.5rem;
+    }
+    span {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+.album-meta {
+    margin: 2rem 0;
+    time {
+     font-size: 1.5rem;
+    }
+}
+}
+
+// Load More Section
+.load-more {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+// Media queries
+@media only screen and (max-width: 700px) {
+    .main-nav {
+        margin: 2rem 0;
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+    }
+}
